@@ -2,7 +2,7 @@
   min-width: 1100px;
   max-width: 1600px;
   margin: 0 auto;
-    font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
 /* Header */
@@ -19,9 +19,12 @@
   color: #000;
 }
 
-.logo_place_header {
+.logo {
   width: 228px;
   height: 32px;
+}
+
+.logo_place_header {
   position: absolute;
   top: 30px;
   left: 64px;
@@ -115,7 +118,7 @@
   margin: 0 0 30px;
 }
 
-.two-columns__paragraph_margin_not {
+.two-columns__paragraph:last-child {
   margin: 0;
 }
 
@@ -177,21 +180,21 @@
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
-  margin: 20px 0 20px;
-}
-
-.table__text_margin-bottom_not {
-  margin-bottom: 0;
+  margin: 20px 0 0;
 }
 
 /* Feynman */
   
 .feynman {
-  height: 890px;
+  min-height: 890px;
   display: flex;
   flex-direction: column;
   align-items: center;
   position: relative;
+  background-image: url('../images/feynman.png');
+  background-size: 867px 637px;
+  background-repeat: no-repeat;
+  background-position-y: bottom;
   background-color: #f2f2f2;
 }
 
@@ -281,22 +284,16 @@
 
 .table__heading_theme_dark {
   width: 200px;
-  line-height: 1.15;
-  font-size: 24px;
-  font-weight: 600;
-  margin: 0;
   padding-top: 80px;
 }
 
 .table__text_theme_dark {
   width: 200px;
-  line-height: 1.2;
-  font-size: 18px;
-  font-weight: normal;
-  margin: 20px 0 0;
 }
 
 .kaufman__triangle {
+  background-image: url('../images/kaufman-triangle.svg');
+  background-size: cover;
   width: 877px;
   height: 877px;
   position: absolute;
@@ -313,6 +310,7 @@
   justify-content: center;
   padding-top: 60px;
   padding-bottom: 40px;
+  box-sizing: border-box;
   background-color: #1f1f1f;
   color: white;
 }
@@ -328,11 +326,6 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-}
-
-.logo_place_footer {
-  width: 228px;
-  height: 32px;
 }
 
 .footer__author {
@@ -354,15 +347,7 @@
 }
 
 .footer__column-links {
-  line-height: 30px;
-  font-size: 18px;
-  font-weight: normal;
-  text-decoration: none;
-  color: white;
-}
-
-.footer__column-links_margin-bottom_yes {
-  margin-bottom: 16px;
+  display: grid;
 }
 
 .footer__column_content_social {
@@ -385,6 +370,6 @@
   color: white;
 }
 
-.footer__column-link_margin-bottom_yes {
+.footer__column-link:last-child {
   margin-bottom: 16px;
 }
