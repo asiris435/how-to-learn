@@ -1,0 +1,10 @@
+.header__mine-illustration {
+    width: 765px;
+    height: 608px;
+    display: flex;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-size: contain;
+    z-index: 2;
+  }
